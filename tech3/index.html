@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script>
+
+        function calculaMedia (){
+            let n1 = document.getElementById("nota1").value
+            let n2 = document.getElementById("nota2").value
+
+            let media = (eval (n1) + eval (n2)) / 2
+
+            window.location.href="resultado.html?media="+media
+        }
+
+
+
+    </script>
+    <title>Painel do Aluno</title>
+</head>
+<body>
+    
+    
+    <section class="formulario">
+        
+        <div class="container">
+            <h1>Painel do Aluno <img src="assets/img/lapis.png" alt="Lápis"></h1>
+            <label>Digite a primeira nota</label>
+            <input type="number" id="nota1" placeholder="Primeira nota">
+    
+            <label>Digite a segunda nota</label>
+            <input type="number" id="nota2" placeholder="Segunda nota">
+    
+            <button onclick="calculaMedia()">Calcular</button>
+        </div>
+        
+        <div class="links">
+            <a href="https://www.linkedin.com/in/kleber-coelho-53582a188/" target="_blank"><img src="assets/img/linkedin.png" width="40px"></a>
+            <a href="https://github.com/KleberMayC" target="_blank"><img src="assets/img/git.png" width="40px"></a>
+        </div>
+            
+        
+    </section>
+</body>
+</html>
